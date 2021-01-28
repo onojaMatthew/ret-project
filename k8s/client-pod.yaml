@@ -1,0 +1,12 @@
+apiVersion: v1
+kink: Pod
+metadata:
+  name: client-pod
+  labels:
+    component: web
+spec:
+  containers:
+    - client
+      image: smartdockerimage/ret_project_client
+      ports:
+        - containerPort: 3000
